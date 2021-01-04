@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_MnsaepPz9uK9yKtLdmOOA');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('service_ngmvc0j', 'template_2e6iq1n', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        window.location.reload()
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+</head>
+<body>
+
+    <header id="header" class="header fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+                    <img class="logo" src="css/img/logo1.jpg" alt="">
+                </div>
+                <div class="col-lg-10 col-md-4 col-sm-4 col-8 ml-auto">
+                    <nav class="nav">
+                        <ul class="menuu d-flex ml-auto" id="menuu">
+                            <li class="menu__item">
+                                <a href="#" data-scroll="#company">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" data-scroll="#before_start">
+                                    Строительство в Финляндии
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" data-scroll="#features">
+                                    Наши услуги
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" data-scroll="#contact_us">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="burger ml-auto" type="button" id="navToggle">
+                        <span class="burger__item">M</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="intro" class="intro">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="offer">
+                            <h1 class="offer__title animate__animated animate__fadeInRight">
+                                Построй дом своей мечты
+                            </h1>
+                            <p1 class="offer__text animate__animated animate__fadeInRight">
+                                Строительство в Финляндии всегда предполагает широкую работу с документами, подрядчиками, муниципальными службами, работу по изучению специфики законодательства, оценивание рисков и т.д. Стоит ли мучаться самим и ломать голову над всеми этими проблемами, если можно поручить это профессионалам и вместе с нами построить вашу мечту, одновременно облегчив себе жизнь?
+                            </p1>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <section id="company" class="company">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 justify-content-center text-center">
+                    <img class="track animate__animated animate__fadeInLeft" src="css/img/track.png" alt="" id="track">
+                </div>
+                <div class="col-lg-7 ml-auto animate__animated animate__fadeInRight">
+                    <h2 class="company__title">
+                        Kymppirakenne
+                    </h2>
+                    <p2 class="company__text">
+                        Мы предоставляем широкий спектр услуг по планированию и проектированию построек любого типа и любой сложности. Наш многолетний опыт работы в сфере строительства и сотрудничество с высококвалифицированными специалистами по архитектурному проектированию позволяют нам выполнять проекты достаточно широкого спектра сложности.
+                    </p2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about_company" class="about_company">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="about__company__title">
+                        О компании
+                    </h3>
+                    <p3 class="about__company__text">
+                        Мы являемся объединением финских строительных компаний различного профиля (подрядчики, субподрядчики, сметчики, дизайнеры), готовых выполнить работы как по планированию объектов, так и по его застройке и продаже. Опыт работы некоторых из наших структур превышает 45 лет и доказал свою состоятельность на рынке Финляндии не только словом, но и делом в лице более 250 выполненных проектов по всей стране.
+                    </p3>
+                </div>
+                <div class="col-lg-6 ml-auto d-flex">
+                    <div class="line d-none d-sm-block">
+                    </div>
+                    <img class="worker animate__animated animate__fadeInRight" src="css/img/worker.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="before_start" class="before_start">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h4 class="before__start__title text-center">
+                        Перед началом проекта
+                    </h4>
+                </div>
+            </div>
+            <div class="row lg">
+                        <div class="col-lg-4">
+                        <div class="before__start__item mx-auto">
+                            <h5 class="before__start__item__title">
+                                Тип проекта по желанию <br> заказчика
+                            </h5>
+                            <hr>
+                            <p5 class="before__start__item__text">
+                                При выполнении <br> индивидуального заказа<br> специалисты по<br> проектированию будут вести<br> тесную работу с заказчиком для<br> создания полноценного<br> понимания проекта
+                            </p5>
+                        </div>
+                        </div>
+                        <div class="col-lg-4">
+                        <div class="before__start__item mx-auto">
+                            <h5 class="before__start__item__title">
+                                Информация об участке под<br> будущее строительство.
+                            </h5>
+                            <hr>
+                            <p5 class="before__start__item__text">
+                                Учет всех особенностей участка,<br> рельефа, наличия подъездных<br> дорог, существующего<br> ландшафта вокруг участка,<br> освещенности участка.
+                            </p5>
+                        </div>
+                        </div>
+                        <div class="col-lg-4">
+                        <div class="before__start__item mx-auto">
+                            <h5 class="before__start__item__title">
+                                Работа с муниципалитетами
+                            </h5>
+                            <hr>
+                            <p5 class="before__start__item__text ">
+                                Выяснение требований<br> муниципалитета, в котором<br> планируется строительство<br> (необходимо ли получить<br> разрешительную<br> документацию)
+                            </p5>
+                        </div>
+                            </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section id="offers" class="offers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h6 class="offers__title text-center">
+                        Что мы предлагаем
+                    </h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-12 text-center">
+                    <img class="offers__img" src="css/img/Bitmap.png" alt="">
+                </div>
+                <div class="col-lg-6 ml-auto">
+                    <h7 class="offers__title2">
+                        Мы продаем недвижимость, которую строим
+                    </h7>
+                    <p class="offers__text">
+                        Любая созидательная задача требует проработки плана действий. Строительство - не исключение. Если Вы задумали построить завод, офисное здание, частный дом, летний домик во дворе для гостей или даже маленькую беседку - то это требует достаточно тщательной подготовки на всех этапах - локация, удобство, безопасность, стоимость и т.д.
+                        <br>
+                    </p>
+                    <p class="offers__text2">
+                        Более того, строительство любого объекта – это процесс, требующий большой ответственности при выборе компании, выполняющей проектные работы. От того, кому Вы доверите проектирование, зависит судьба Вашей постройки, т.е. ее функциональность, долговечность и, конечно, дизайнерское оформление.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="features__title">
+                        Мы внимательно и ответственно относимся к каждому заказу и предлагаем нашим клиентам следующие услуги:
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                        <img class="one__x" src="css/img/1x.png" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <div class="text__titles">
+                        <p class="title__1">
+                            Совместная проработка инвестиционного плана и реализации проекта
+                        </p>
+                        <p class="title__2">
+                            Предоставление инвестиционных пакетов в сфере недвижимости
+                        </p>
+                        <p class="title__3">
+                            Частное строительство объектов и продажа застроенных участков
+                        </p>
+                        <p class="title__4">
+                            Промышленное строительство
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2 ml-auto">
+                        <img class="two__x" src="css/img/2x.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="text__titles">
+                        <p class="title__1">
+                            Проектирование и дизайн работа по индивидуальным заказам Клиента
+                        </p>
+                        <p class="title__2">
+                            Ремонты и реновационные работы
+                        </p>
+                        <p class="title__3">
+                            Дизайн и планирование застраиваемых объектов
+                        </p>
+                        <p class="title__4">
+                            Работа с документами
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2">
+                        <img class="three__x" src="css/img/3x.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="text__titles">
+                        <p class="title__1">
+                            Помощь в выборе строительных материалов
+                        </p>
+                        <p class="title__2">
+                            Посредничество и отчетность о процессе работы
+                        </p>
+                        <p class="title__3">
+                            Помощь в продаже недвижимости
+                        </p>
+                        <p class="title__4">
+                            Консультирование в вопросах строительства Финляндии
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact_us" class="contact_us">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h1 class="contact__us__title">
+                        Свяжитесь с нами для получения консультации!
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+
+                    <div class="col-lg">
+                        <p class="end__title1">
+                            Путь к Вашей мечте начинается с первого шага.
+                        </p>
+                        <p class="end__title2">
+                            Мы Вам подскажем: просто отправьте нам заявку!
+                        </p>
+                    </div>
+                    <div class="col-lg">
+                        <div class="contactus__box">
+                            <h1 class="contuct__title">
+                                Запрос<br> на консультацию
+                            </h1>
+                            <form action="#" class="form" id="contact-form">
+                                <input type="hidden" name="contact_number">
+                                <input class="text__name" type="text" placeholder="Введите Ваше имя" name="user_name">
+                                <input class="email" type="email" placeholder="Введите Ваш e-mail" name="user_email">
+                                <input value="Отправить" type="submit" class="form_btn">
+                            </form>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="bottom" class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                    <img class="bottom_logo" src="css/img/logo1.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-2 ml-auto">
+                    <p class="telephone">Телефон: +358405797927
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-2 ml-auto">
+                    <a href="https://www.facebook.com/stroitelstvovfinljandii"><img class="facebook" src="css/img/facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="app.js">
+
+</script>
+
+</body>
+</html>
