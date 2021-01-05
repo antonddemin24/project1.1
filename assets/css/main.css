@@ -59,7 +59,7 @@ ul, li {
 }
 
 .intro {
-    background: url("img/intro2.jpg") center no-repeat;
+    background: url("../img/intro2.jpg") center no-repeat;
     background-size: cover;
     padding-top: 18px;
 }
