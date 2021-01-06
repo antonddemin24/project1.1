@@ -92,7 +92,7 @@ li {
 .company__title {
     margin-top: 74px;
     margin-bottom: 56px;
-    color: #005388;
+    color: #1F26A7;
     font-size: 40px;
     font-weight: 700;
 }
@@ -111,7 +111,7 @@ li {
 .about__company__title {
     margin-top: 70px;
     margin-bottom: 25px;
-    color: #005388;
+    color: #1F26A7;
     font-size: 40px;
     font-weight: 700;
 }
@@ -147,7 +147,7 @@ li {
     margin-top: 85px;
     font-size: 40px;
     font-weight: 700;
-    color: #005388;
+    color: #1F26A7;
 }
 
 .before__start__item {
@@ -191,7 +191,7 @@ li {
 .offers__title {
     margin-top: 85px;
     margin-bottom: 67px;
-    color: #005388;
+    color: #1F26A7;
     font-size: 40px;
     font-weight: 700;
 }
@@ -230,7 +230,7 @@ li {
 }
 
 .features__title {
-    color: #005388;
+    color: #1F26A7;
     font-size: 30px;
     font-weight: 600;
     line-height: 40px;
@@ -413,7 +413,7 @@ li {
         flex-direction: column;
         width: 100%;
         text-align: right;
-        background: #0c5460;
+        background: #ffffff;
         border-radius: 10px;
     }
 
@@ -500,17 +500,46 @@ li {
 
     /* Second section */
 
+    .finance {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .company__title {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .company__text {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
     /* Third section */
 
-    .worker {
+    .our_company {
+        margin-top: 30px;
         width: 100%;
     }
 
     /* Fourth section */
 
+    .before__start__title {
+        margin-top: 60px;
+    }
+
     /* Fifth section */
 
+    .offers__title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
     /* Sixth section */
+
+    .features__title {
+        margin-top: 40px;
+    }
 
     /* Footer section */
 
@@ -520,7 +549,7 @@ li {
         display: block;
         font-size: 15px;
         font-weight: 600;
-        color: #CACACA;
+        margin-top: 40px;
     }
 }
 
@@ -566,7 +595,7 @@ li {
     }
 
     .offer__title {
-        margin-top: 25px;
+        margin-top: 120px;
         margin-bottom: 25px;
         font-size: 30px;
     }
@@ -587,8 +616,8 @@ li {
     /* Second section */
 
     .company__title {
-        margin-top: 74px;
-        margin-bottom: 56px;
+        margin-top: 25px;
+        margin-bottom: 30px;
         color: #005388;
         font-size: 30px;
         font-weight: 700;
@@ -600,9 +629,13 @@ li {
 
     /* Third section */
 
-    .worker {
+    .about__company__title {
+        margin-top: 40px;
+    }
+
+    .our_company {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 40px;
         border-radius: 20px;
         margin-bottom: 60px;
     }
