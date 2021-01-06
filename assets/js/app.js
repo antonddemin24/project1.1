@@ -24,8 +24,6 @@ $(function (){
         }
     }
 
-
-
     $("[data-scroll]").on("click", function (event) {
         event.preventDefault();
 
@@ -47,6 +45,17 @@ $(function (){
 
     });
 
+    $(window).scroll(function() {
+        var scrolled = $(window).scrollTop();
 
+        if ( scrolled > 100 && scrolled > scrollPrev ) {
+            $(".header").fadeOut("fast");
+        } else {
+            $('.header').fadeIn("fast");
+            $('.header').addClass('fixed');
+
+        }
+        scrollPrev = scrolled;
+    });
 
 });

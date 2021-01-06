@@ -84,9 +84,9 @@ li {
     background-color: #F7F7F7;
 }
 
-.track {
-    margin-top: 150px;
-    margin-left: 86px;
+.finance {
+    margin-top: 50px;
+    width: 100%;
 }
 
 .company__title {
@@ -127,10 +127,10 @@ li {
     margin-left: 20px;
     margin-right: 50px;
     border-right: 8px solid #005388;
-    height: 290px;
+    height: 320px;
 }
 
-.worker {
+.our_company {
     width: 87%;
     margin-top: 91px;
     border-radius: 20px;
@@ -144,7 +144,7 @@ li {
 }
 
 .before__start__title {
-    margin-top: 25px;
+    margin-top: 85px;
     font-size: 40px;
     font-weight: 700;
     color: #005388;
@@ -234,7 +234,7 @@ li {
     font-size: 30px;
     font-weight: 600;
     line-height: 40px;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
@@ -291,7 +291,7 @@ li {
 
 .fb {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .fb-min {
@@ -532,6 +532,10 @@ li {
         padding-top: 0;
     }
 
+    .header.out {
+        transform: translateY(-100%);
+    }
+
     .nav {
         display: none;
     }
@@ -555,6 +559,10 @@ li {
 
     .menu__item:nth-child(4) {
         margin-right: 30px;
+    }
+
+    .menu__item {
+        margin: 20px;
     }
 
     .offer__title {
