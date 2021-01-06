@@ -38,16 +38,19 @@
             });
         }
     </script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v9.0" nonce="rEsnMPpa"></script>
 
 </head>
 
 <body>
 
+    <!----------- First section ------------>
     <header id="header" class="header fixed-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-sm-4 col-4">
-                    <img class="logo" src="assets/img/logo_2.png" alt="">
+                    <img class="logo" src="assets/img/logo_3.png" alt="">
                 </div>
                 <div class="col-lg-10 col-md-4 col-sm-4 col-8 ml-auto">
                     <nav class="nav">
@@ -101,6 +104,7 @@
     </section>
 
 
+    <!----------- Second section ------------>
     <section id="company" class="company">
         <div class="container">
             <div class="row">
@@ -120,6 +124,7 @@
         </div>
     </section>
 
+    <!----------- Third section ------------>
     <section id="about_company" class="about_company">
         <div class="container">
             <div class="row">
@@ -133,7 +138,7 @@
                     </p3>
                 </div>
                 <div class="col-lg-6 ml-auto d-flex">
-                    <div class="line d-none d-sm-block">
+                    <div class="line d-none d-md-block">
                     </div>
                     <img class="worker animate__animated animate__fadeInRight" src="assets/img/worker.jpg" alt="">
                 </div>
@@ -141,6 +146,7 @@
         </div>
     </section>
 
+    <!----------- Fourth section ------------>
     <section id="before_start" class="before_start">
         <div class="container">
             <div class="row justify-content-center">
@@ -190,6 +196,7 @@
         </div>
     </section>
 
+    <!----------- Fifth section ------------>
     <section id="offers" class="offers">
         <div class="container">
             <div class="row">
@@ -221,40 +228,59 @@
         </div>
     </section>
 
+    <!----------- Sixth section ------------>
     <section id="features" class="features">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 text-center d-flex mx-auto">
+                <div class="col-lg-7 text-center mx-auto">
                     <h1 class="features__title">
                         Мы внимательно и ответственно относимся к каждому заказу и предлагаем нашим клиентам следующие услуги:
                     </h1>
                 </div>
             </div>
-
-
-            <div class="row lg">
-                <div class="col-lg-4">
-                    <div class="text__titles1 mx-auto">
-                        <img class="one__x" src="assets/img/1x.png" alt="">
-                        <hr>
-                        <p class="title__1">
-                            Помощь в выборе строительных материалов
-                        </p>
-                        <p class="title__2">
-                            Посредничество и отчетность о процессе работы
-                        </p>
-                        <p class="title__3">
-                            Помощь в продаже недвижимости
-                        </p>
-                        <p class="title__4">
-                            Консультирование в вопросах строительства Финляндии
-                        </p>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 text-center">
+                    <div class="fb">
+                        <div class="fb-page" data-href="https://www.facebook.com/stroitelstvovfinljandii"
+                             data-tabs="timeline" data-width="500" data-height="800" data-small-header="false"
+                             data-adapt-container-width="true" data-hide-cover="false"
+                             data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/stroitelstvovfinljandii"
+                                        class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/stroitelstvovfinljandii">Строительство в Финляндии</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="fb-min">
+                        <div class="fb-page" data-href="https://www.facebook.com/stroitelstvovfinljandii"
+                             data-tabs="timeline" data-width="300" data-height="450" data-small-header="true"
+                             data-adapt-container-width="true" data-hide-cover="false"
+                             data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/stroitelstvovfinljandii"
+                                        class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/stroitelstvovfinljandii">Строительство в Финляндии</a>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="text__titles1 mx-auto">
-                        <img class="two__x" src="assets/img/2x.png" alt="">
-                        <hr>
+                <div class="col-lg-6 mx-auto">
+                    <img class="one__x" src="assets/img/1x.png" alt="">
+                    <div class="text__titles">
+                        <p class="title__1">
+                            Совместная проработка инвестиционного плана и реализации проекта
+                        </p>
+                        <p class="title__2">
+                            Предоставление инвестиционных пакетов в сфере недвижимости
+                        </p>
+                        <p class="title__3">
+                            Частное строительство объектов и продажа застроенных участков
+                        </p>
+                        <p class="title__4">
+                            Промышленное строительство
+                        </p>
+                    </div>
+                    <img class="two__x" src="assets/img/2x.png" alt="">
+                    <div class="text__titles">
                         <p class="title__1">
                             Проектирование и дизайн работа по индивидуальным заказам Клиента
                         </p>
@@ -268,11 +294,8 @@
                             Работа с документами
                         </p>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text__titles1 mx-auto">
-                        <img class="three__x" src="assets/img/3x.png" alt="">
-                        <hr>
+                    <img class="three__x" src="assets/img/3x.png" alt="">
+                    <div class="text__titles">
                         <p class="title__1">
                             Помощь в выборе строительных материалов
                         </p>
@@ -288,70 +311,14 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
-    <section id="contact_us" class="contact_us">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <h1 class="contact__us__title">
-                        Свяжитесь с нами для получения консультации!
-                    </h1>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-lg">
-                    <p class="end__title1">
-                        Путь к Вашей мечте начинается с первого шага.
-                    </p>
-                    <p class="end__title2">
-                        Мы Вам подскажем: просто отправьте нам заявку!
-                    </p>
-                </div>
-                <div class="col-lg">
-                    <div class="contactus__box">
-                        <h1 class="contuct__title">
-                            Запрос<br> на консультацию
-                        </h1>
-                        <form action="#" class="form" id="contact-form">
-                            <input type="hidden" name="contact_number">
-                            <input class="text__name" type="text" placeholder="Введите Ваше имя" name="user_name">
-                            <input class="email" type="email" placeholder="Введите Ваш e-mail" name="user_email">
-                            <input value="Отправить" type="submit" class="form_btn">
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- <section id="bottom" class="bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                    <img class="bottom_logo" src="assets/img/logo_2.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-2 ml-auto">
-                    <p class="telephone">Телефон: +358405797927
-                    </p>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-2 ml-auto">
-                    <a href="https://www.facebook.com/stroitelstvovfinljandii"><img class="facebook" src="assets/img/facebook.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!----------- Footer ------------>
     <footer class="footer-bs">
         <div class="row">
             <div class="col-md-2 footer-brand">
-                <img src="assets/img/logo_2.png" class="w-100 pb-5" alt="">
+                <img src="assets/img/logo_3.png" class="logo2 w-100 pl-3 pr-3 pb-3 pt-3 mb-3" alt="">
                 <div class="social">
                     <a href="https://www.facebook.com/stroitelstvovfinljandii"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -367,7 +334,7 @@
                 <p><i class="fa fa fa-envelope"></i> somerandomemail@example.com </p>
 
             </div>
-            <div class="col-md-4 footer-ns">
+            <div class="col-md-4 col-12 footer-ns">
                 <h4>Запрос на консультацию</h4>
                 <p>Мы Вам подскажем: просто отправьте нам заявку!</p>
                 <p>
