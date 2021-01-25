@@ -25,10 +25,10 @@ li {
 }
 
 .logo {
-    height: 100px;
+    width: 150px;
     border-radius: 10px;
-    margin-left: 20px;
-    padding: 25px;
+    padding-top: 32px;
+
 }
 
 .menu__item {
@@ -61,7 +61,7 @@ li {
 }
 
 .offer__title {
-    margin-top: 400px;
+    margin-top: 300px;
     margin-bottom: 55px;
     font-size: 40px;
     font-weight: 600;
@@ -335,6 +335,17 @@ li {
     padding: 5px 3px;
 }
 
+.fa1 {
+    color: #005388;
+    font-size: 15px;
+}
+
+.fa-whatsapp {
+    color: white;
+    font-size: 20px;
+    padding: 1px 10px;
+}
+
 .social .fa:hover {
     color: rgba(255, 255, 255, 0.80);
     text-decoration: none;
@@ -343,6 +354,12 @@ li {
 .logo2 {
     background: white;
     border-radius: 10px;
+}
+
+.Kymp {
+    border-radius: 10px;
+    width: 19%;
+    margin-top: 20px;
 }
 
 /* Burger */
@@ -422,13 +439,28 @@ li {
     }
 
     .logo {
-        height: 80px;
-        margin-top: 10px;
+        width: 150px;
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
     .offers__img {
         margin-top: 100px;
         height: 300px;
         margin-bottom: 50px;
+    }
+
+    .menu__item {
+        margin: 40px 20px;
+    }
+
+    .menu__item a {
+        font-size: 15px;
+        font-weight: 600;
+        color: #005388;
+        opacity: .75;
+        transition: opacity .2s linear;
+        text-decoration: none;
+
     }
 }
 
